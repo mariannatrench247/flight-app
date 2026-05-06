@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* CENTER PAGE */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  color: #2f5fd0;
+  margin-bottom: 30px;
+}
+
+/* CARD SECTIONS */
+.section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* BUTTONS */
+button {
+  background: #2f5fd0;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin: 5px 5px 5px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #1e4ac9;
+}
+
+/* INPUTS + SELECTS */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* RESULTS BOX */
+#results {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* RESULT CARDS */
+.card {
+  background: #f5f7fb;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 4px solid #2f5fd0;
+}

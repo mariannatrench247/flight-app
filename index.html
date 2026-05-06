@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Database</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Flight Database</h1>
+
+  <!-- ========================= -->
+  <!-- VIEW DATA -->
+  <!-- ========================= -->
+  <div class="section">
+    <h2>View Data</h2>
+    <button onclick="loadFlights()">All Flights</button>
+    <button onclick="loadReservations()">Reservations</button>
+    <button onclick="loadCustomers()">Customers</button>
+    <button onclick="loadPayments()">Payments</button>
+  </div>
+
+  <!-- ========================= -->
+  <!-- SEARCH -->
+  <!-- ========================= -->
+  <div class="section">
+    <h2>Search Reservations</h2>
+
+    <label for="name">Name</label>
+    <input id="name" placeholder="First or Last Name">
+
+    <label for="departure">Departure City</label>
+    <select id="departure">
+      <option value="">-- Any --</option>
+    </select>
+
+    <label for="arrival">Arrival City</label>
+    <select id="arrival">
+      <option value="">-- Any --</option>
+    </select>
+
+    <label for="flight">Flight Number</label>
+    <select id="flight">
+      <option value="">-- Any --</option>
+    </select>
+
+    <button onclick="searchReservations()">Search</button>
+  </div>
+
+  <!-- ========================= -->
+  <!-- ADD CUSTOMER -->
+  <!-- ========================= -->
+
+    <div class="section">
+        <h2>Add Customer</h2>
+
+        <label>First Name</label>
+        <input id="firstName" placeholder="First Name">
+
+        <label>Last Name</label>
+        <input id="lastName" placeholder="Last Name">
+
+        <button onclick="addCustomer()">Add Customer</button>
+    </div>
+
+  <!-- ========================= -->
+  <!-- BOOK FLIGHT -->
+  <!-- ========================= -->
+  <div class="section">
+    <h2>Book Flight</h2>
+
+    <label for="customerSelect">Customer</label>
+    <select id="customerSelect"></select>
+
+    <label for="flightSelect">Flight</label>
+    <select id="flightSelect"></select>
+
+    <label for="seatSelect">Seat</label>
+    <select id="seatSelect"></select>
+
+    <button onclick="bookFlight()">Book Flight</button>
+  </div>
+
+  <!-- ========================= -->
+  <!-- PAYMENT -->
+  <!-- ========================= -->
+  <div class="section">
+    <h2>Make Payment</h2>
+
+    <label for="paymentReservation">Reservation</label>
+    <select id="paymentReservation"></select>
+
+    <label for="cardType">Card Type</label>
+    <select id="cardType">
+      <option value="Visa">Visa</option>
+      <option value="Mastercard">Mastercard</option>
+      <option value="Amex">Amex</option>
+    </select>
+
+    <label for="amount">Amount</label>
+    <input id="amount" type="number" placeholder="Amount">
+
+    <button onclick="makePayment()">Submit Payment</button>
+  </div>
+
+  <!-- ========================= -->
+  <!-- RESULTS -->
+  <!-- ========================= -->
+  <div class="section">
+    <h2>Results</h2>
+    <div id="results"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
